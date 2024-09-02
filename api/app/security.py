@@ -17,3 +17,4 @@ def verify_password(p: str, h: str) -> bool:
 def create_token(sub: str) -> str:
     exp = datetime.utcnow() + timedelta(minutes=settings.access_ttl_min)
     return jwt.encode({"sub": sub, "exp": exp}, settings.jwt_secret, algorithm=settings.jwt_algorithm)
+# check perf here
