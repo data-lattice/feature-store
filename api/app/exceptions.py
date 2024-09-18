@@ -9,3 +9,4 @@ class AppError(Exception):
 
 async def app_error_handler(_: Request, exc: AppError):
     return JSONResponse(status_code=exc.status, content={"detail": exc.detail})
+# off-by-one, fixed
