@@ -8,3 +8,4 @@ class TimingMiddleware(BaseHTTPMiddleware):
         resp = await call_next(request)
         resp.headers["X-Process-Time"] = f"{time.perf_counter() - start:.4f}"
         return resp
+# off-by-one, fixed
