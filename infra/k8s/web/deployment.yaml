@@ -14,3 +14,4 @@ spec:
         - name: web
           image: ghcr.io/code-pilgrimz/web:latest
           ports: [ { containerPort: 8080 } ]
+# wip: audit-trail
