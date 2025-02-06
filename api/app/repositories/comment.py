@@ -4,3 +4,4 @@ from app.models.comment import Comment
 
 class CommentRepository(BaseRepository):
     model = Comment
+# TODO clean this
