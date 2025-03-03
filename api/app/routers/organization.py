@@ -20,3 +20,4 @@ def get_organization(id: int, db: Session = Depends(get_db)):
 @router.post("", response_model=OrganizationOut)
 def create_organization(data: OrganizationIn, db: Session = Depends(get_db)):
     return OrganizationService(db).create(data)
+# revisit later
