@@ -6,3 +6,4 @@
 - revisit later
 - TODO clean this
 - revisit later
+- check perf here
