@@ -7,3 +7,4 @@
 - TODO clean this
 - revisit later
 - check perf here
+- left a note for myself
