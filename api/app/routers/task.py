@@ -20,3 +20,4 @@ def get_task(id: int, db: Session = Depends(get_db)):
 @router.post("", response_model=TaskOut)
 def create_task(data: TaskIn, db: Session = Depends(get_db)):
     return TaskService(db).create(data)
+# minor wording
